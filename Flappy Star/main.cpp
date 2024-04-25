@@ -35,7 +35,7 @@ int main(int argc, char** argv)
 	int color_01 = 250;
 	int x=5,y=10,z=0,m=15,k=5;
 	double time=30,speed;
-	int u1[5]={4,5,6,7,3},p1[5]={6,5,4,3,7};//»ÙÃª¤j¤p
+	int u1[5]={4,5,6,7,3},p1[5]={6,5,4,3,7};//éšœç¤™å¤§å°
 
 	char test;
 	while(1){
@@ -52,7 +52,7 @@ int main(int argc, char** argv)
 		word('t',23,8,color_01);
 		word('a',29,8,color_01);
 		word('r',35,8,color_01);
-		gotoxy(19Q,16);cout << "Start...click[SPACE]";
+		gotoxy(19,16);cout << "Start...click[SPACE]";
 
 		op = '1';
 		while(1){
@@ -64,7 +64,7 @@ int main(int argc, char** argv)
 				break;
 			}
 		}
-		//¹CÀ¸¶}©l
+		//éŠæˆ²é–‹å§‹
 		background();
 		score=0;
 		speed=1;
@@ -72,17 +72,17 @@ int main(int argc, char** argv)
 		m=15;
 		while(1){
 			SetColor(240);
-			gotoxy(0,0);cout  << "              ";//²MªÅ¤§«eªº¼Æ­È
+			gotoxy(0,0);cout  << "              ";//æ¸…ç©ºä¹‹å‰çš„æ•¸å€¼
 			gotoxy(0,0);cout  << "speed: " << speed;
 			gotoxy(50,0);cout << "score:" << score;
 			SetColor(250);
 			ob1(ob);
             /*
-			if(y<3){ //´ú¸Õ¥Î§@¹ú
+			if(y<3){ //æ¸¬è©¦ç”¨ä½œå¼Š
 				score+=10;
 			}
             */
-			if(score%10==0 && score!=0){//Åı¶¡®æÀH¤À¼Æ»P®É¶¡ÅÜ¤p
+			if(score%10==0 && score!=0){//è®“é–“æ ¼éš¨åˆ†æ•¸èˆ‡æ™‚é–“è®Šå°
 				time-=5;
 				if(time<0){
 					time = 0;
@@ -99,7 +99,7 @@ int main(int argc, char** argv)
 			}
 
 			if(57-ob[ob.size()-1].first>m){
-				ob.push_back(make_pair(57,rand()%k));//±À¤J»ÙÃª®y¼Ğ
+				ob.push_back(make_pair(57,rand()%k));//æ¨å…¥éšœç¤™åº§æ¨™
 			}
 
 			if(ob.size()==0){
@@ -108,7 +108,7 @@ int main(int argc, char** argv)
 			ship(x,y,z);
 
 			for(int i=0;i<ob.size();i++){
-				if(ob[i].first<=x && x<=ob[i].first+2){//§PÂ_¬O§_¼²¨ì
+				if(ob[i].first<=x && x<=ob[i].first+2){//åˆ¤æ–·æ˜¯å¦æ’åˆ°
 					if( (2<y && y<=2+u1[ob[i].second]+1) || (y<17 && y>=17-p1[ob[i].second]) ){
 						Sleep(1000);
 						system("cls");
@@ -121,9 +121,9 @@ int main(int argc, char** argv)
 				}
 			}
 
-			Sleep(time);//¹CÀ¸§ó·s®É¶¡¡Aµe­±³t«×
+			Sleep(time);//éŠæˆ²æ›´æ–°æ™‚é–“ï¼Œç•«é¢é€Ÿåº¦
 		}
-		//µ²§ô
+		//çµæŸ
 		end:
 		system("cls");
 		int x1=rand()%40+10,y1=rand()%15+3;
