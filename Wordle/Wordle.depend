@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1714033178 source:c:\users\justi\onedrive\орн▒\cplusplus_game\wordle\function.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<cstdlib>
+	<ctime>
+	<cstring>
+	<fstream>
+	<windows.h>
+	<array>
+	<vector>
+	<list>
+	<fstream>
+	<string>
+	"header.h"
+
+1714033177 c:\users\justi\onedrive\орн▒\cplusplus_game\wordle\header.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<cstdlib>
+	<ctime>
+	<cstring>
+	<fstream>
+	<windows.h>
+	<array>
+	<vector>
+	<list>
+	<string>
+	<fstream>
+
+1714038572 source:c:\users\justi\onedrive\орн▒\cplusplus_game\wordle\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<cstdlib>
+	<ctime>
+	<cstring>
+	<fstream>
+	<windows.h>
+	<array>
+	<vector>
+	<string>
+	<list>
+	<fstream>
+	"header.h"
+
